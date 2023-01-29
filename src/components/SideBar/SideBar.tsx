@@ -7,7 +7,7 @@ import HomeIcon from '@mui/icons-material/Home'
 import Divider from "@mui/material/Divider";
 import HistoryIcon from '@mui/icons-material/HistoryEdu'
 //import SchoolIcon from '@mui/icons-material/School'
-//import BookIcon from '@mui/icons-material/LibraryBooks'
+import BookIcon from '@mui/icons-material/LibraryBooks'
 import EyeIcon from '@mui/icons-material/Visibility'
 //#880035
 
@@ -44,6 +44,15 @@ function SideBar({handleQuizSelect} : Props) {
                             <HistoryIcon/>
                         </ListItemIcon>
                         <ListItemText primary="Historia"/>
+                    </ListItemButton>
+                </ListItem>
+
+                <ListItem disablePadding>
+                    <ListItemButton sx={{pl: 4}} onClick={ () => handleQuizSelect('https://retoolapi.dev/pHECYg/literatura') }>
+                        <ListItemIcon>
+                            <BookIcon/>
+                        </ListItemIcon>
+                        <ListItemText primary="Literatura"/>
                     </ListItemButton>
                 </ListItem>
 
