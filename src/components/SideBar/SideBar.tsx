@@ -6,7 +6,7 @@ import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from '@mui/icons-material/Home'
 import Divider from "@mui/material/Divider";
 import HistoryIcon from '@mui/icons-material/HistoryEdu'
-//import SchoolIcon from '@mui/icons-material/School'
+import SchoolIcon from '@mui/icons-material/School'
 import BookIcon from '@mui/icons-material/LibraryBooks'
 import EyeIcon from '@mui/icons-material/Visibility'
 //#880035
@@ -53,6 +53,14 @@ function SideBar({handleQuizSelect} : Props) {
                             <BookIcon/>
                         </ListItemIcon>
                         <ListItemText primary="Literatura"/>
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton sx={{pl: 4}} onClick={ () => handleQuizSelect('https://quiz2-fe354-default-rtdb.europe-west1.firebasedatabase.app/kultura.json') }>
+                        <ListItemIcon>
+                            <SchoolIcon/>
+                        </ListItemIcon>
+                        <ListItemText primary="Kultura"/>
                     </ListItemButton>
                 </ListItem>
 
